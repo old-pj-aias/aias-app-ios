@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C124F4DD18005E63CB /* AppDelegate.swift */; };
+		BCEE02C424F4DD18005E63CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C324F4DD18005E63CB /* SceneDelegate.swift */; };
+		BCEE02C624F4DD18005E63CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* ViewController.swift */; };
+		BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */; };
+		BCEE02CE24F4DD1A005E63CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CC24F4DD1A005E63CB /* LaunchScreen.storyboard */; };
+		BCEE02D924F4DD1B005E63CB /* aias_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02D824F4DD1B005E63CB /* aias_iOSTests.swift */; };
+		BCEE02E424F4DD1B005E63CB /* aias_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02E324F4DD1B005E63CB /* aias_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCEE02D524F4DD1B005E63CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCEE02B624F4DD18005E63CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEE02BD24F4DD18005E63CB;
+			remoteInfo = "aias-iOS";
+		};
+		BCEE02E024F4DD1B005E63CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCEE02B624F4DD18005E63CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEE02BD24F4DD18005E63CB;
+			remoteInfo = "aias-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCEE02BE24F4DD18005E63CB /* aias-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aias-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEE02C124F4DD18005E63CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCEE02C324F4DD18005E63CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCEE02C524F4DD18005E63CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCEE02CD24F4DD1A005E63CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCEE02CF24F4DD1A005E63CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEE02D424F4DD1B005E63CB /* aias-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aias-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEE02D824F4DD1B005E63CB /* aias_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aias_iOSTests.swift; sourceTree = "<group>"; };
+		BCEE02DA24F4DD1B005E63CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEE02DF24F4DD1B005E63CB /* aias-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aias-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEE02E324F4DD1B005E63CB /* aias_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aias_iOSUITests.swift; sourceTree = "<group>"; };
+		BCEE02E524F4DD1B005E63CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCEE02BB24F4DD18005E63CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEE02D124F4DD1B005E63CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEE02DC24F4DD1B005E63CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCEE02B524F4DD18005E63CB = {
+			isa = PBXGroup;
+			children = (
+				BCEE02C024F4DD18005E63CB /* aias-iOS */,
+				BCEE02D724F4DD1B005E63CB /* aias-iOSTests */,
+				BCEE02E224F4DD1B005E63CB /* aias-iOSUITests */,
+				BCEE02BF24F4DD18005E63CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCEE02BF24F4DD18005E63CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02BE24F4DD18005E63CB /* aias-iOS.app */,
+				BCEE02D424F4DD1B005E63CB /* aias-iOSTests.xctest */,
+				BCEE02DF24F4DD1B005E63CB /* aias-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCEE02C024F4DD18005E63CB /* aias-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02C124F4DD18005E63CB /* AppDelegate.swift */,
+				BCEE02C324F4DD18005E63CB /* SceneDelegate.swift */,
+				BCEE02F624F4DDD3005E63CB /* Utility */,
+				BCEE02F524F4DDBA005E63CB /* Resources */,
+				BCEE02F424F4DDAA005E63CB /* NetWorking */,
+				BCEE02F124F4DD58005E63CB /* Presenter */,
+				BCEE02CC24F4DD1A005E63CB /* LaunchScreen.storyboard */,
+				BCEE02CF24F4DD1A005E63CB /* Info.plist */,
+			);
+			path = "aias-iOS";
+			sourceTree = "<group>";
+		};
+		BCEE02D724F4DD1B005E63CB /* aias-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02D824F4DD1B005E63CB /* aias_iOSTests.swift */,
+				BCEE02DA24F4DD1B005E63CB /* Info.plist */,
+			);
+			path = "aias-iOSTests";
+			sourceTree = "<group>";
+		};
+		BCEE02E224F4DD1B005E63CB /* aias-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02E324F4DD1B005E63CB /* aias_iOSUITests.swift */,
+				BCEE02E524F4DD1B005E63CB /* Info.plist */,
+			);
+			path = "aias-iOSUITests";
+			sourceTree = "<group>";
+		};
+		BCEE02F124F4DD58005E63CB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02F224F4DD8D005E63CB /* Pages */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCEE02F224F4DD8D005E63CB /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02C524F4DD18005E63CB /* ViewController.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		BCEE02F424F4DDAA005E63CB /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		BCEE02F524F4DDBA005E63CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCEE02F624F4DDD3005E63CB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCEE02BD24F4DD18005E63CB /* aias-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEE02E824F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOS" */;
+			buildPhases = (
+				BCEE02BA24F4DD18005E63CB /* Sources */,
+				BCEE02BB24F4DD18005E63CB /* Frameworks */,
+				BCEE02BC24F4DD18005E63CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aias-iOS";
+			productName = "aias-iOS";
+			productReference = BCEE02BE24F4DD18005E63CB /* aias-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCEE02D324F4DD1B005E63CB /* aias-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEE02EB24F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOSTests" */;
+			buildPhases = (
+				BCEE02D024F4DD1B005E63CB /* Sources */,
+				BCEE02D124F4DD1B005E63CB /* Frameworks */,
+				BCEE02D224F4DD1B005E63CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCEE02D624F4DD1B005E63CB /* PBXTargetDependency */,
+			);
+			name = "aias-iOSTests";
+			productName = "aias-iOSTests";
+			productReference = BCEE02D424F4DD1B005E63CB /* aias-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCEE02DE24F4DD1B005E63CB /* aias-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEE02EE24F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOSUITests" */;
+			buildPhases = (
+				BCEE02DB24F4DD1B005E63CB /* Sources */,
+				BCEE02DC24F4DD1B005E63CB /* Frameworks */,
+				BCEE02DD24F4DD1B005E63CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCEE02E124F4DD1B005E63CB /* PBXTargetDependency */,
+			);
+			name = "aias-iOSUITests";
+			productName = "aias-iOSUITests";
+			productReference = BCEE02DF24F4DD1B005E63CB /* aias-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCEE02B624F4DD18005E63CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = ShuntaNakajima;
+				TargetAttributes = {
+					BCEE02BD24F4DD18005E63CB = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					BCEE02D324F4DD1B005E63CB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BCEE02BD24F4DD18005E63CB;
+					};
+					BCEE02DE24F4DD1B005E63CB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BCEE02BD24F4DD18005E63CB;
+					};
+				};
+			};
+			buildConfigurationList = BCEE02B924F4DD18005E63CB /* Build configuration list for PBXProject "aias-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCEE02B524F4DD18005E63CB;
+			productRefGroup = BCEE02BF24F4DD18005E63CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCEE02BD24F4DD18005E63CB /* aias-iOS */,
+				BCEE02D324F4DD1B005E63CB /* aias-iOSTests */,
+				BCEE02DE24F4DD1B005E63CB /* aias-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCEE02BC24F4DD18005E63CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEE02CE24F4DD1A005E63CB /* LaunchScreen.storyboard in Resources */,
+				BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEE02D224F4DD1B005E63CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEE02DD24F4DD1B005E63CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCEE02BA24F4DD18005E63CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEE02C624F4DD18005E63CB /* ViewController.swift in Sources */,
+				BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */,
+				BCEE02C424F4DD18005E63CB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEE02D024F4DD1B005E63CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEE02D924F4DD1B005E63CB /* aias_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEE02DB24F4DD1B005E63CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEE02E424F4DD1B005E63CB /* aias_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCEE02D624F4DD1B005E63CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEE02BD24F4DD18005E63CB /* aias-iOS */;
+			targetProxy = BCEE02D524F4DD1B005E63CB /* PBXContainerItemProxy */;
+		};
+		BCEE02E124F4DD1B005E63CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEE02BD24F4DD18005E63CB /* aias-iOS */;
+			targetProxy = BCEE02E024F4DD1B005E63CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCEE02CC24F4DD1A005E63CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCEE02CD24F4DD1A005E63CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCEE02E624F4DD1B005E63CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCEE02E724F4DD1B005E63CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCEE02E924F4DD1B005E63CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = "aias-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCEE02EA24F4DD1B005E63CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = "aias-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCEE02EC24F4DD1B005E63CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = "aias-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aias-iOS.app/aias-iOS";
+			};
+			name = Debug;
+		};
+		BCEE02ED24F4DD1B005E63CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = "aias-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aias-iOS.app/aias-iOS";
+			};
+			name = Release;
+		};
+		BCEE02EF24F4DD1B005E63CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = "aias-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "aias-iOS";
+			};
+			name = Debug;
+		};
+		BCEE02F024F4DD1B005E63CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = "aias-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "aias-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCEE02B924F4DD18005E63CB /* Build configuration list for PBXProject "aias-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEE02E624F4DD1B005E63CB /* Debug */,
+				BCEE02E724F4DD1B005E63CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEE02E824F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEE02E924F4DD1B005E63CB /* Debug */,
+				BCEE02EA24F4DD1B005E63CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEE02EB24F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEE02EC24F4DD1B005E63CB /* Debug */,
+				BCEE02ED24F4DD1B005E63CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEE02EE24F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEE02EF24F4DD1B005E63CB /* Debug */,
+				BCEE02F024F4DD1B005E63CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCEE02B624F4DD18005E63CB /* Project object */;
+}
