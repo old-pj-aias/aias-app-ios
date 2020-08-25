@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(sayHello(to:"randtest"))
     }
 
+    func sayHello(to: String) -> String {
+        let result = rust_greeting(to)
+        let swift_result = String(cString: result!)
+        rust_greeting_free(UnsafeMutablePointer(mutating: result))
+        return swift_result
+    }
 
 }
 
