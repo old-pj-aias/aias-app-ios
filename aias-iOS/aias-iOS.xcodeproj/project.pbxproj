@@ -14,7 +14,7 @@
 		BCEE02D924F4DD1B005E63CB /* aias_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02D824F4DD1B005E63CB /* aias_iOSTests.swift */; };
 		BCEE02E424F4DD1B005E63CB /* aias_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02E324F4DD1B005E63CB /* aias_iOSUITests.swift */; };
 		BCEE02F924F53345005E63CB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEE02F824F5333A005E63CB /* libresolv.tbd */; };
-		BCEE02FB24F5337A005E63CB /* libaias_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEE02FA24F53368005E63CB /* libaias_library.a */; };
+		BCEE030324FC17A0005E63CB /* liblib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEE030224FC1791005E63CB /* liblib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,9 @@
 		BCEE02E524F4DD1B005E63CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCEE02F824F5333A005E63CB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		BCEE02FA24F53368005E63CB /* libaias_library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaias_library.a; path = "../aias-core/target/universal/release/libaias_library.a"; sourceTree = "<group>"; };
-		BCEE02FC24F536BE005E63CB /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lib.h; path = "../aias-core/src/lib.h"; sourceTree = "<group>"; };
 		BCEE02FD24F536CD005E63CB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BCEE030124FC11C3005E63CB /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lib.h; path = "../aias-core/ios/src/lib.h"; sourceTree = "<group>"; };
+		BCEE030224FC1791005E63CB /* liblib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblib.a; path = "../aias-core/ios/target/universal/release/liblib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEE02F924F53345005E63CB /* libresolv.tbd in Frameworks */,
-				BCEE02FB24F5337A005E63CB /* libaias_library.a in Frameworks */,
+				BCEE030324FC17A0005E63CB /* liblib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +84,7 @@
 		BCEE02B524F4DD18005E63CB = {
 			isa = PBXGroup;
 			children = (
-				BCEE02FC24F536BE005E63CB /* lib.h */,
+				BCEE030124FC11C3005E63CB /* lib.h */,
 				BCEE02C024F4DD18005E63CB /* aias-iOS */,
 				BCEE02D724F4DD1B005E63CB /* aias-iOSTests */,
 				BCEE02E224F4DD1B005E63CB /* aias-iOSUITests */,
@@ -176,6 +177,7 @@
 		BCEE02F724F5333A005E63CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCEE030224FC1791005E63CB /* liblib.a */,
 				BCEE02FA24F53368005E63CB /* libaias_library.a */,
 				BCEE02F824F5333A005E63CB /* libresolv.tbd */,
 			);
@@ -485,7 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/target/universal/release";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/ios/target/universal/release";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/aias-iOS/Bridging-Header.h";
@@ -505,7 +507,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/target/universal/release";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/ios/target/universal/release";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/aias-iOS/Bridging-Header.h";
