@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		4217D33B1C2404D36FF8E947 /* Pods_aias_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157AAB2394F9A270661BED07 /* Pods_aias_iOS.framework */; };
 		A7FAB4F67720C3C61C53638A /* Pods_aias_iOS_aias_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044CD5394E15F51930384840 /* Pods_aias_iOS_aias_iOSUITests.framework */; };
 		BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C124F4DD18005E63CB /* AppDelegate.swift */; };
-		BCEE02C624F4DD18005E63CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* ViewController.swift */; };
+		BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */; };
 		BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */; };
 		BCEE02CE24F4DD1A005E63CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CC24F4DD1A005E63CB /* LaunchScreen.storyboard */; };
 		BCEE02D924F4DD1B005E63CB /* aias_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02D824F4DD1B005E63CB /* aias_iOSTests.swift */; };
@@ -49,7 +49,7 @@
 		AFDEEC38CEDBB41138438C49 /* Pods-aias-iOS-aias-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCEE02BE24F4DD18005E63CB /* aias-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aias-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEE02C124F4DD18005E63CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCEE02C524F4DD18005E63CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthViewController.swift; sourceTree = "<group>"; };
 		BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEE02CD24F4DD1A005E63CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCEE02CF24F4DD1A005E63CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,8 +106,15 @@
 				2F7EF8A7CD374184BF017356 /* Pods-aias-iOSTests.debug.xcconfig */,
 				24F7DE66F3AC5505CF992107 /* Pods-aias-iOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BCC1D8E824FC273B00B3E4A2 /* SMSAuth */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */,
+			);
+			path = SMSAuth;
 			sourceTree = "<group>";
 		};
 		BCEE02B524F4DD18005E63CB = {
@@ -177,7 +184,7 @@
 		BCEE02F224F4DD8D005E63CB /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				BCEE02C524F4DD18005E63CB /* ViewController.swift */,
+				BCC1D8E824FC273B00B3E4A2 /* SMSAuth */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -455,7 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEE02C624F4DD18005E63CB /* ViewController.swift in Sources */,
+				BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */,
 				BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
