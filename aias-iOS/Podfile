@@ -10,6 +10,7 @@ target 'aias-iOS' do
   pod 'ReusableKit' 
   pod 'ReusableKit/RxSwift'
   pod 'PinLayout'
+  pod 'RxAlamofire'
   # Pods for aias-iOS
 
   target 'aias-iOSTests' do
