@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3395001AAE2E3800CC66DD9A /* Pods_aias_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADB3F4D57D6E38413C85C11 /* Pods_aias_iOSTests.framework */; };
+		4217D33B1C2404D36FF8E947 /* Pods_aias_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157AAB2394F9A270661BED07 /* Pods_aias_iOS.framework */; };
+		A7FAB4F67720C3C61C53638A /* Pods_aias_iOS_aias_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044CD5394E15F51930384840 /* Pods_aias_iOS_aias_iOSUITests.framework */; };
+		BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8E924FC27BA00B3E4A2 /* SMSAuthView.swift */; };
 		BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C124F4DD18005E63CB /* AppDelegate.swift */; };
-		BCEE02C624F4DD18005E63CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* ViewController.swift */; };
+		BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */; };
 		BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */; };
 		BCEE02CE24F4DD1A005E63CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CC24F4DD1A005E63CB /* LaunchScreen.storyboard */; };
 		BCEE02D924F4DD1B005E63CB /* aias_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02D824F4DD1B005E63CB /* aias_iOSTests.swift */; };
 		BCEE02E424F4DD1B005E63CB /* aias_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02E324F4DD1B005E63CB /* aias_iOSUITests.swift */; };
 		BCEE02F924F53345005E63CB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEE02F824F5333A005E63CB /* libresolv.tbd */; };
-		BCEE02FB24F5337A005E63CB /* libaias_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEE02FA24F53368005E63CB /* libaias_library.a */; };
+		BCEE030324FC17A0005E63CB /* liblib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEE030224FC1791005E63CB /* liblib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044CD5394E15F51930384840 /* Pods_aias_iOS_aias_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aias_iOS_aias_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		157AAB2394F9A270661BED07 /* Pods_aias_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aias_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F7DE66F3AC5505CF992107 /* Pods-aias-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-aias-iOSTests/Pods-aias-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F7EF8A7CD374184BF017356 /* Pods-aias-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-aias-iOSTests/Pods-aias-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ADB3F4D57D6E38413C85C11 /* Pods_aias_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aias_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		713C82BF3B41A82E2A2998E2 /* Pods-aias-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS.debug.xcconfig"; path = "Target Support Files/Pods-aias-iOS/Pods-aias-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		774813A7BABFBEC21C4A52CC /* Pods-aias-iOS-aias-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS-aias-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A25BE04E3E2A264928FC788E /* Pods-aias-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS.release.xcconfig"; path = "Target Support Files/Pods-aias-iOS/Pods-aias-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AFDEEC38CEDBB41138438C49 /* Pods-aias-iOS-aias-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCC1D8E924FC27BA00B3E4A2 /* SMSAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthView.swift; sourceTree = "<group>"; };
 		BCEE02BE24F4DD18005E63CB /* aias-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aias-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEE02C124F4DD18005E63CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCEE02C524F4DD18005E63CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthViewController.swift; sourceTree = "<group>"; };
 		BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEE02CD24F4DD1A005E63CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCEE02CF24F4DD1A005E63CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +63,9 @@
 		BCEE02E524F4DD1B005E63CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCEE02F824F5333A005E63CB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		BCEE02FA24F53368005E63CB /* libaias_library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaias_library.a; path = "../aias-core/target/universal/release/libaias_library.a"; sourceTree = "<group>"; };
-		BCEE02FC24F536BE005E63CB /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lib.h; path = "../aias-core/src/lib.h"; sourceTree = "<group>"; };
 		BCEE02FD24F536CD005E63CB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BCEE030124FC11C3005E63CB /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lib.h; path = "../aias-core/ios/src/lib.h"; sourceTree = "<group>"; };
+		BCEE030224FC1791005E63CB /* liblib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblib.a; path = "../aias-core/ios/target/universal/release/liblib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +74,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEE02F924F53345005E63CB /* libresolv.tbd in Frameworks */,
-				BCEE02FB24F5337A005E63CB /* libaias_library.a in Frameworks */,
+				BCEE030324FC17A0005E63CB /* liblib.a in Frameworks */,
+				4217D33B1C2404D36FF8E947 /* Pods_aias_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3395001AAE2E3800CC66DD9A /* Pods_aias_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,21 +91,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FAB4F67720C3C61C53638A /* Pods_aias_iOS_aias_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9B36688192D8ACF174382A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				713C82BF3B41A82E2A2998E2 /* Pods-aias-iOS.debug.xcconfig */,
+				A25BE04E3E2A264928FC788E /* Pods-aias-iOS.release.xcconfig */,
+				AFDEEC38CEDBB41138438C49 /* Pods-aias-iOS-aias-iOSUITests.debug.xcconfig */,
+				774813A7BABFBEC21C4A52CC /* Pods-aias-iOS-aias-iOSUITests.release.xcconfig */,
+				2F7EF8A7CD374184BF017356 /* Pods-aias-iOSTests.debug.xcconfig */,
+				24F7DE66F3AC5505CF992107 /* Pods-aias-iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BCC1D8E824FC273B00B3E4A2 /* SMSAuth */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */,
+				BCC1D8E924FC27BA00B3E4A2 /* SMSAuthView.swift */,
+			);
+			path = SMSAuth;
+			sourceTree = "<group>";
+		};
 		BCEE02B524F4DD18005E63CB = {
 			isa = PBXGroup;
 			children = (
-				BCEE02FC24F536BE005E63CB /* lib.h */,
+				BCEE030124FC11C3005E63CB /* lib.h */,
 				BCEE02C024F4DD18005E63CB /* aias-iOS */,
 				BCEE02D724F4DD1B005E63CB /* aias-iOSTests */,
 				BCEE02E224F4DD1B005E63CB /* aias-iOSUITests */,
 				BCEE02BF24F4DD18005E63CB /* Products */,
 				BCEE02F724F5333A005E63CB /* Frameworks */,
+				0F9B36688192D8ACF174382A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,7 +187,7 @@
 		BCEE02F224F4DD8D005E63CB /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				BCEE02C524F4DD18005E63CB /* ViewController.swift */,
+				BCC1D8E824FC273B00B3E4A2 /* SMSAuth */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -176,8 +217,12 @@
 		BCEE02F724F5333A005E63CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCEE030224FC1791005E63CB /* liblib.a */,
 				BCEE02FA24F53368005E63CB /* libaias_library.a */,
 				BCEE02F824F5333A005E63CB /* libresolv.tbd */,
+				157AAB2394F9A270661BED07 /* Pods_aias_iOS.framework */,
+				044CD5394E15F51930384840 /* Pods_aias_iOS_aias_iOSUITests.framework */,
+				5ADB3F4D57D6E38413C85C11 /* Pods_aias_iOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCEE02E824F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOS" */;
 			buildPhases = (
+				48C9754F3A467473433DFC33 /* [CP] Check Pods Manifest.lock */,
 				BCEE02BA24F4DD18005E63CB /* Sources */,
 				BCEE02BB24F4DD18005E63CB /* Frameworks */,
 				BCEE02BC24F4DD18005E63CB /* Resources */,
+				0021BC4CEA96E6CC9E4C1C86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCEE02EB24F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOSTests" */;
 			buildPhases = (
+				5BB6D63333EB874FCB012807 /* [CP] Check Pods Manifest.lock */,
 				BCEE02D024F4DD1B005E63CB /* Sources */,
 				BCEE02D124F4DD1B005E63CB /* Frameworks */,
 				BCEE02D224F4DD1B005E63CB /* Resources */,
@@ -224,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCEE02EE24F4DD1B005E63CB /* Build configuration list for PBXNativeTarget "aias-iOSUITests" */;
 			buildPhases = (
+				289DE21A321A22BBD45C9B92 /* [CP] Check Pods Manifest.lock */,
 				BCEE02DB24F4DD1B005E63CB /* Sources */,
 				BCEE02DC24F4DD1B005E63CB /* Frameworks */,
 				BCEE02DD24F4DD1B005E63CB /* Resources */,
+				3E6FD69FC6E2C1BCB0030BCD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,13 +357,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0021BC4CEA96E6CC9E4C1C86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aias-iOS/Pods-aias-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aias-iOS/Pods-aias-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aias-iOS/Pods-aias-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		289DE21A321A22BBD45C9B92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aias-iOS-aias-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6FD69FC6E2C1BCB0030BCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48C9754F3A467473433DFC33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aias-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB6D63333EB874FCB012807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aias-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCEE02BA24F4DD18005E63CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEE02C624F4DD18005E63CB /* ViewController.swift in Sources */,
+				BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */,
 				BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */,
+				BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +630,7 @@
 		};
 		BCEE02E924F4DD1B005E63CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 713C82BF3B41A82E2A2998E2 /* Pods-aias-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -485,7 +640,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/target/universal/release";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/ios/target/universal/release";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/aias-iOS/Bridging-Header.h";
@@ -496,6 +651,7 @@
 		};
 		BCEE02EA24F4DD1B005E63CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A25BE04E3E2A264928FC788E /* Pods-aias-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,7 +661,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/target/universal/release";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../aias-core/ios/target/universal/release";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShuntaNakajima.aias-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/aias-iOS/Bridging-Header.h";
@@ -516,6 +672,7 @@
 		};
 		BCEE02EC24F4DD1B005E63CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F7EF8A7CD374184BF017356 /* Pods-aias-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +695,7 @@
 		};
 		BCEE02ED24F4DD1B005E63CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F7DE66F3AC5505CF992107 /* Pods-aias-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,6 +718,7 @@
 		};
 		BCEE02EF24F4DD1B005E63CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFDEEC38CEDBB41138438C49 /* Pods-aias-iOS-aias-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -580,6 +739,7 @@
 		};
 		BCEE02F024F4DD1B005E63CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774813A7BABFBEC21C4A52CC /* Pods-aias-iOS-aias-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
