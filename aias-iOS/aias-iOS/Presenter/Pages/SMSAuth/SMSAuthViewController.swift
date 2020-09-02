@@ -11,7 +11,10 @@ import RxSwift
 import RxCocoa
 
 final class SMSAuthViewController: UIViewController {
-    var disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
+    private let pickerView: UIPickerView = UIPickerView()
+    
+    let selectedEJkey = BehaviorRelay<String>(value: "")
     
     private var mainView: SMSAuthView {
         self.view as! SMSAuthView
@@ -23,24 +26,56 @@ final class SMSAuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let key =
-"""
------BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxXo2zWkciUEZBcm/Exk8
-Zac8NWskP59EAVFlO218xIXOV0FfphPB/tnbQh7GDXddo7XVEptHdHXyJlXXLihb
-9vXbUZF2NDFLOhgDv7pa72VNLbw+jKR/FlsDtwv/bv7ZDqq+n79uavuJ8giX3qCf
-+mtBmro7hG5AVve3JImhvA0FvTKJ0xCYUYw02st08He5RwFAXQK8G2cwahp+5ECH
-MDdfFUaoxMfRN/+Hl9iqiJovKUJQ3545N2fDYdd0eqSlqL1N5xJxYX1GDMtGZgME
-hHR6ntdfm7r43HDB4hk/MJIsNay6+K9tJBiz1qXG40G4NjMKzVrX9pi1Bv8G2RnP
-/wIDAQAB
------END PUBLIC KEY-----
-"""
-        let sm = SignatureManager()
-        sm.setSubset(signerKey: key, judgeKey: key, text: "ttt").subscribe(onNext: {
-            sm.GenerateSignature().subscribe(onNext: { st in
-                print(st)
-            }).disposed(by: self.disposeBag)
-        }).disposed(by: disposeBag)
+        
+        let toolBar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.sizeToFit()
+
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target: self, action: #selector(donePicker))
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolBar.setItems([flexibleSpace,doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        mainView.SelectEJkeyTextField.inputView = pickerView
+        mainView.SelectEJkeyTextField.inputAccessoryView = toolBar
+        
+        Observable.just(EJkeys().keys + [EJkey(name: "Read EJ key from QR", key: "")]).bind(to: pickerView.rx.itemTitles) { (row, element) in
+            return element.name
+        }
+        .disposed(by: disposeBag)
+        
+        pickerView.rx.itemSelected
+            .subscribe { (event) in
+                switch event {
+                case .next(let selected):
+                    if selected.row == EJkeys().keys.count{
+                        self.mainView.SelectEJkeyTextField.text = "Read EJ key from QR"
+                    }else{
+                        self.mainView.SelectEJkeyTextField.text = EJkeys().keys[selected.row].name
+                        self.selectedEJkey.accept(EJkeys().keys[selected.row].key)
+                    }
+                default:
+                    break
+                }
+        }
+        .disposed(by: disposeBag)
+        
+        //        let sm = SignatureManager()
+        //        sm.setSubset(signerKey: key, judgeKey: key, text: "ttt").subscribe(onNext: {
+        //            sm.GenerateSignature().subscribe(onNext: { st in
+        //                print(st)
+        //            }).disposed(by: self.disposeBag)
+        //        }).disposed(by: disposeBag)
+    }
+    
+    @objc private func donePicker() {
+        mainView.SelectEJkeyTextField.resignFirstResponder()
+        //if EJkey from QR is selected, call photo library
+        if self.mainView.SelectEJkeyTextField.text == "Read EJ key from QR"{
+            
+        }
+        
     }
     
 }
