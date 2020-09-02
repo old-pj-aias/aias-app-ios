@@ -12,6 +12,7 @@ class ApplicationConnectionManager {
     static let shared = ApplicationConnectionManager()
     
     var clientInfo = ClientInfo(publicKey: "", appScheme: "")
+    var judgeKey = ""
     
     func loadScheme(url:URL){
         let comp = NSURLComponents(url: url, resolvingAgainstBaseURL: false)
@@ -19,6 +20,13 @@ class ApplicationConnectionManager {
         let restoreData = Data(base64Encoded: params["pubkey"] ?? "")
         clientInfo.publicKey = String(data: restoreData!, encoding: .utf8)!
         clientInfo.appScheme = params["scheme"] ?? ""
+    }
+    
+    func encodeScheme(signature:String) -> URL{
+        let signatureData = signature.data(using: .utf8)
+        let encodedSignature = signatureData?.base64EncodedString()
+        let urlString = clientInfo.appScheme + "://" + "aias?signature=" + encodedSignature!
+        return URL(string: urlString)!
     }
     
     func urlComponentsToDict(comp:NSURLComponents) -> Dictionary<String, String> {

@@ -63,6 +63,7 @@ final class SMSAuthViewController: UIViewController, UIImagePickerControllerDele
         .disposed(by: disposeBag)
         
         selectedEJkey.subscribe(onNext: { string in
+            ApplicationConnectionManager.shared.judgeKey = string
             if self.mainView.SelectEJkeyTextField.text == "Read EJ key from QR"{
                 self.mainView.SelectEJkeyTextField.text = "Loaded EJ key from QR"
             }
