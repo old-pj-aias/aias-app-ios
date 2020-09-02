@@ -68,12 +68,18 @@ final class SMSAuthViewController: UIViewController, UIImagePickerControllerDele
             }
         }).disposed(by: disposeBag)
         
-        //        let sm = SignatureManager()
-        //        sm.setSubset(signerKey: key, judgeKey: key, text: "ttt").subscribe(onNext: {
-        //            sm.GenerateSignature().subscribe(onNext: { st in
-        //                print(st)
-        //            }).disposed(by: self.disposeBag)
-        //        }).disposed(by: disposeBag)
+        mainView.SubmitButton.rx.tap.asObservable().subscribe(onNext: {_ in
+            AiasRequest.shared.request(body: "{\"phone_number\":\"+81" + String(self.mainView.SMSTextField.text![self.mainView.SMSTextField.text!.index(after: self.mainView.SMSTextField.text!.startIndex)..<self.mainView.SMSTextField.text!.endIndex]) + "\"}", path: .send_sms, method: .post)
+                .subscribe(onNext: {text in
+                    let vc = SMSVerifyViewController()
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true, completion: nil)
+                }).disposed(by: self.disposeBag)
+        }).disposed(by: disposeBag)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     @objc private func donePicker() {
@@ -100,7 +106,7 @@ final class SMSAuthViewController: UIViewController, UIImagePickerControllerDele
         }
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.dismiss(animated: true, completion: nil)
     }
