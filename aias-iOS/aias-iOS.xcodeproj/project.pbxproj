@@ -10,9 +10,14 @@
 		3395001AAE2E3800CC66DD9A /* Pods_aias_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADB3F4D57D6E38413C85C11 /* Pods_aias_iOSTests.framework */; };
 		4217D33B1C2404D36FF8E947 /* Pods_aias_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157AAB2394F9A270661BED07 /* Pods_aias_iOS.framework */; };
 		A7FAB4F67720C3C61C53638A /* Pods_aias_iOS_aias_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044CD5394E15F51930384840 /* Pods_aias_iOS_aias_iOSUITests.framework */; };
+		BC59466124FFB075008F58A9 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */; };
+		BC59466224FFB075008F58A9 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */; };
+		BC59466324FFB075008F58A9 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */; };
 		BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8E924FC27BA00B3E4A2 /* SMSAuthView.swift */; };
 		BCC1D8EC24FE14B500B3E4A2 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8EB24FE14B500B3E4A2 /* Requests.swift */; };
 		BCC1D8EF24FE1D7800B3E4A2 /* SignatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */; };
+		BCC1D8F124FF95D800B3E4A2 /* EJkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8F024FF95D800B3E4A2 /* EJkeys.swift */; };
+		BCC1D8F324FFA65300B3E4A2 /* QRKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8F224FFA65300B3E4A2 /* QRKeyManager.swift */; };
 		BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C124F4DD18005E63CB /* AppDelegate.swift */; };
 		BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */; };
 		BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */; };
@@ -50,9 +55,14 @@
 		774813A7BABFBEC21C4A52CC /* Pods-aias-iOS-aias-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS-aias-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A25BE04E3E2A264928FC788E /* Pods-aias-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS.release.xcconfig"; path = "Target Support Files/Pods-aias-iOS/Pods-aias-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AFDEEC38CEDBB41138438C49 /* Pods-aias-iOS-aias-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
+		BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
 		BCC1D8E924FC27BA00B3E4A2 /* SMSAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthView.swift; sourceTree = "<group>"; };
 		BCC1D8EB24FE14B500B3E4A2 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureManager.swift; sourceTree = "<group>"; };
+		BCC1D8F024FF95D800B3E4A2 /* EJkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EJkeys.swift; sourceTree = "<group>"; };
+		BCC1D8F224FFA65300B3E4A2 /* QRKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRKeyManager.swift; sourceTree = "<group>"; };
 		BCEE02BE24F4DD18005E63CB /* aias-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aias-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEE02C124F4DD18005E63CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +125,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BC59465D24FFB02C008F58A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */,
+				BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */,
+				BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BCC1D8E824FC273B00B3E4A2 /* SMSAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */,
+				BCC1D8F024FF95D800B3E4A2 /* EJkeys.swift */,
+				BCC1D8F224FFA65300B3E4A2 /* QRKeyManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -159,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				BCEE02C124F4DD18005E63CB /* AppDelegate.swift */,
+				BC59465D24FFB02C008F58A9 /* Extensions */,
 				BCC1D8ED24FE1D6000B3E4A2 /* Utility */,
 				BCEE02F524F4DDBA005E63CB /* Resources */,
 				BCEE02F424F4DDAA005E63CB /* NetWorking */,
@@ -475,7 +498,12 @@
 				BCC1D8EC24FE14B500B3E4A2 /* Requests.swift in Sources */,
 				BCC1D8EF24FE1D7800B3E4A2 /* SignatureManager.swift in Sources */,
 				BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */,
+				BCC1D8F124FF95D800B3E4A2 /* EJkeys.swift in Sources */,
 				BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */,
+				BC59466324FFB075008F58A9 /* RxImagePickerDelegateProxy.swift in Sources */,
+				BC59466224FFB075008F58A9 /* UIImagePickerController+RxCreate.swift in Sources */,
+				BC59466124FFB075008F58A9 /* UIImagePickerController+Rx.swift in Sources */,
+				BCC1D8F324FFA65300B3E4A2 /* QRKeyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

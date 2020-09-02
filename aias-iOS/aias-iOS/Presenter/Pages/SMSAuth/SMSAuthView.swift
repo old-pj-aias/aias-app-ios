@@ -12,15 +12,12 @@ import RxSwift
 import RxCocoa
 import PinLayout
 
-class SMSAuthView: UIView,UITextFieldDelegate{
-    
-    let disposeBag = DisposeBag()
+final class SMSAuthView: UIView,UITextFieldDelegate{
     
     let TitleLabel = UILabel()
     let SMSTextField = UITextField()
+    let SelectEJkeyTextField = UITextField()
     let SubmitButton = UIButton()
-    
-    let tell = BehaviorRelay<String>(value: "")
     
     public enum Reusable{
     }
@@ -32,6 +29,7 @@ class SMSAuthView: UIView,UITextFieldDelegate{
         super.init(frame: frame)
         
         addSubview(SMSTextField)
+        addSubview(SelectEJkeyTextField)
         addSubview(SubmitButton)
         
         backgroundColor = .white
@@ -41,6 +39,11 @@ class SMSAuthView: UIView,UITextFieldDelegate{
         SMSTextField.textAlignment = .center
         SMSTextField.keyboardType = .numberPad
         SMSTextField.layer.borderWidth = 1
+        
+        SelectEJkeyTextField.layer.borderWidth = 1
+        SelectEJkeyTextField.attributedPlaceholder = NSAttributedString(string: "EJ Key", attributes: [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)])
+        SelectEJkeyTextField.textAlignment = .center
+        SelectEJkeyTextField.tintColor = .clear
         
         SubmitButton.backgroundColor = #colorLiteral(red: 1, green: 0.3675946896, blue: 0.5942392387, alpha: 1)
         SubmitButton.setTitle("Get Verification", for: .normal)
@@ -56,8 +59,10 @@ class SMSAuthView: UIView,UITextFieldDelegate{
     func layout(){
         SMSTextField.pin.left(35).right(35).height(60).vCenter(-120)
         SMSTextField.layer.cornerRadius = SMSTextField.bounds.height/2
-        SubmitButton.pin.left(35).right(35).height(60).vCenter(-50)
-        SubmitButton.layer.cornerRadius = SMSTextField.bounds.height/2
+        SelectEJkeyTextField.pin.left(35).right(35).height(60).vCenter(-50)
+        SelectEJkeyTextField.layer.cornerRadius = SelectEJkeyTextField.bounds.height/2
+        SubmitButton.pin.left(35).right(35).height(60).vCenter(20)
+        SubmitButton.layer.cornerRadius = SubmitButton.bounds.height/2
     }
     
     override func layoutSubviews() {
