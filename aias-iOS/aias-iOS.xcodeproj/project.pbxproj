@@ -18,6 +18,10 @@
 		BCC1D8EF24FE1D7800B3E4A2 /* SignatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */; };
 		BCC1D8F124FF95D800B3E4A2 /* EJkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8F024FF95D800B3E4A2 /* EJkeys.swift */; };
 		BCC1D8F324FFA65300B3E4A2 /* QRKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8F224FFA65300B3E4A2 /* QRKeyManager.swift */; };
+		BCE4356724FFE78C0003C0C4 /* ApplicationConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4356624FFE78C0003C0C4 /* ApplicationConnectionManager.swift */; };
+		BCE4356A25002D520003C0C4 /* SMSVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4356925002D520003C0C4 /* SMSVerifyViewController.swift */; };
+		BCE4356C25002D5B0003C0C4 /* SMSVerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4356B25002D5B0003C0C4 /* SMSVerifyView.swift */; };
+		BCE4356E250035C70003C0C4 /* String+ConvertToDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4356D250035C70003C0C4 /* String+ConvertToDict.swift */; };
 		BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C124F4DD18005E63CB /* AppDelegate.swift */; };
 		BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */; };
 		BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 		BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureManager.swift; sourceTree = "<group>"; };
 		BCC1D8F024FF95D800B3E4A2 /* EJkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EJkeys.swift; sourceTree = "<group>"; };
 		BCC1D8F224FFA65300B3E4A2 /* QRKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRKeyManager.swift; sourceTree = "<group>"; };
+		BCE4356624FFE78C0003C0C4 /* ApplicationConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConnectionManager.swift; sourceTree = "<group>"; };
+		BCE4356925002D520003C0C4 /* SMSVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerifyViewController.swift; sourceTree = "<group>"; };
+		BCE4356B25002D5B0003C0C4 /* SMSVerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerifyView.swift; sourceTree = "<group>"; };
+		BCE4356D250035C70003C0C4 /* String+ConvertToDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ConvertToDict.swift"; sourceTree = "<group>"; };
 		BCEE02BE24F4DD18005E63CB /* aias-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aias-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEE02C124F4DD18005E63CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 				BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */,
 				BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */,
 				BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */,
+				BCE4356D250035C70003C0C4 /* String+ConvertToDict.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,8 +159,18 @@
 				BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */,
 				BCC1D8F024FF95D800B3E4A2 /* EJkeys.swift */,
 				BCC1D8F224FFA65300B3E4A2 /* QRKeyManager.swift */,
+				BCE4356624FFE78C0003C0C4 /* ApplicationConnectionManager.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		BCE4356825002D350003C0C4 /* SMSVerify */ = {
+			isa = PBXGroup;
+			children = (
+				BCE4356925002D520003C0C4 /* SMSVerifyViewController.swift */,
+				BCE4356B25002D5B0003C0C4 /* SMSVerifyView.swift */,
+			);
+			path = SMSVerify;
 			sourceTree = "<group>";
 		};
 		BCEE02B524F4DD18005E63CB = {
@@ -222,6 +241,7 @@
 		BCEE02F224F4DD8D005E63CB /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				BCE4356825002D350003C0C4 /* SMSVerify */,
 				BCC1D8E824FC273B00B3E4A2 /* SMSAuth */,
 			);
 			path = Pages;
@@ -497,13 +517,17 @@
 				BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */,
 				BCC1D8EC24FE14B500B3E4A2 /* Requests.swift in Sources */,
 				BCC1D8EF24FE1D7800B3E4A2 /* SignatureManager.swift in Sources */,
+				BCE4356A25002D520003C0C4 /* SMSVerifyViewController.swift in Sources */,
 				BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */,
 				BCC1D8F124FF95D800B3E4A2 /* EJkeys.swift in Sources */,
 				BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */,
 				BC59466324FFB075008F58A9 /* RxImagePickerDelegateProxy.swift in Sources */,
 				BC59466224FFB075008F58A9 /* UIImagePickerController+RxCreate.swift in Sources */,
+				BCE4356E250035C70003C0C4 /* String+ConvertToDict.swift in Sources */,
 				BC59466124FFB075008F58A9 /* UIImagePickerController+Rx.swift in Sources */,
+				BCE4356C25002D5B0003C0C4 /* SMSVerifyView.swift in Sources */,
 				BCC1D8F324FFA65300B3E4A2 /* QRKeyManager.swift in Sources */,
+				BCE4356724FFE78C0003C0C4 /* ApplicationConnectionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
