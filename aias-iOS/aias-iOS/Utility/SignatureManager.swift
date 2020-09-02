@@ -13,7 +13,7 @@ import Foundation
 class SignatureManager {
     
     func setSubset(signerKey:String,judgeKey:String,text:String) -> Observable<Void>{
-        new_ios(signerKey, judgeKey)
+        new_ios(signerKey, judgeKey,10)
         let blindedDigest = String(cString: blind_ios(text))
         return AiasRequest.shared.request(body: blindedDigest, path: .ready)
             .map{subset -> () in
