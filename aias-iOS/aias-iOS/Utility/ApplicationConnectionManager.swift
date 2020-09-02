@@ -23,12 +23,12 @@ class ApplicationConnectionManager {
     
     func urlComponentsToDict(comp:NSURLComponents) -> Dictionary<String, String> {
         var dict:Dictionary<String, String> = Dictionary<String, String>()
-
+        
         for i in 0...(comp.queryItems?.count ?? 0) - 1 {
             let item = comp.queryItems![i] as NSURLQueryItem
             dict[item.name] = item.value
         }
-
+        
         return dict
     }
 }
