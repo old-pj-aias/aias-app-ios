@@ -11,15 +11,18 @@ import RxSwift
 import RxCocoa
 
 final class QRKeyManager {
-    func pickMediaPhoto(vc:UIViewController) -> Observable<UIImage?>{
-        return UIImagePickerController.rx.createWithParent(vc) { picker in
-            picker.sourceType = .photoLibrary
-            picker.allowsEditing = true
+    
+    var picker: UIImagePickerController! = UIImagePickerController()
+    
+    func readQR(image: UIImage?) -> String{
+        let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy:CIDetectorAccuracyHigh])
+        guard let image = image else { return "" }
+        guard let ciImage = CIImage(image: image) else { return "" }
+        guard let features = detector?.features(in: ciImage) else { return "" }
+        for feature in features as! [CIQRCodeFeature] {
+            return feature.messageString!
         }
-        .flatMap { $0.rx.didFinishPickingMediaWithInfo }
-        .take(1)
-        .map { info in
-            return info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage
-        }
+        return ""
     }
+    
 }

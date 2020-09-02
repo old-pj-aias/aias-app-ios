@@ -10,9 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class SMSAuthViewController: UIViewController {
+final class SMSAuthViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     private let disposeBag = DisposeBag()
     private let pickerView: UIPickerView = UIPickerView()
+    private var picker: UIImagePickerController! = UIImagePickerController()
     
     let selectedEJkey = BehaviorRelay<String>(value: "")
     
@@ -31,7 +32,7 @@ final class SMSAuthViewController: UIViewController {
         toolBar.barStyle = UIBarStyle.default
         toolBar.isTranslucent = true
         toolBar.sizeToFit()
-
+        
         let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target: self, action: #selector(donePicker))
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         toolBar.setItems([flexibleSpace,doneButton], animated: false)
@@ -61,6 +62,12 @@ final class SMSAuthViewController: UIViewController {
         }
         .disposed(by: disposeBag)
         
+        selectedEJkey.subscribe(onNext: { string in
+            if self.mainView.SelectEJkeyTextField.text == "Read EJ key from QR"{
+                self.mainView.SelectEJkeyTextField.text = "Loaded EJ key from QR"
+            }
+        }).disposed(by: disposeBag)
+        
         //        let sm = SignatureManager()
         //        sm.setSubset(signerKey: key, judgeKey: key, text: "ttt").subscribe(onNext: {
         //            sm.GenerateSignature().subscribe(onNext: { st in
@@ -73,9 +80,29 @@ final class SMSAuthViewController: UIViewController {
         mainView.SelectEJkeyTextField.resignFirstResponder()
         //if EJkey from QR is selected, call photo library
         if self.mainView.SelectEJkeyTextField.text == "Read EJ key from QR"{
-            
+            pickImage()
         }
         
+    }
+    
+    func pickImage(){
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        picker.navigationBar.tintColor = UIColor.white
+        picker.navigationBar.barTintColor = UIColor.gray
+        self.present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage] as? UIImage {
+            let pubKey = QRKeyManager().readQR(image: image)
+            selectedEJkey.accept(pubKey)
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
