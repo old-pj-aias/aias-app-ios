@@ -26,6 +26,8 @@
 		BCE435742500E9DE0003C0C4 /* ClientAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE435732500E9DE0003C0C4 /* ClientAuthView.swift */; };
 		BCE435762500F0210003C0C4 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE435752500F0210003C0C4 /* KeyChainManager.swift */; };
 		BCE435782500F6830003C0C4 /* AiasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE435772500F6830003C0C4 /* AiasError.swift */; };
+		BCE4357B2501046D0003C0C4 /* ReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4357A2501046D0003C0C4 /* ReadyViewController.swift */; };
+		BCE4357D250104760003C0C4 /* ReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4357C250104760003C0C4 /* ReadyView.swift */; };
 		BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C124F4DD18005E63CB /* AppDelegate.swift */; };
 		BCEE02C624F4DD18005E63CB /* SMSAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */; };
 		BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		BCE435732500E9DE0003C0C4 /* ClientAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAuthView.swift; sourceTree = "<group>"; };
 		BCE435752500F0210003C0C4 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		BCE435772500F6830003C0C4 /* AiasError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiasError.swift; sourceTree = "<group>"; };
+		BCE4357A2501046D0003C0C4 /* ReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyViewController.swift; sourceTree = "<group>"; };
+		BCE4357C250104760003C0C4 /* ReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyView.swift; sourceTree = "<group>"; };
 		BCEE02BE24F4DD18005E63CB /* aias-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aias-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEE02C124F4DD18005E63CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCEE02C524F4DD18005E63CB /* SMSAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,15 @@
 			path = ClientAuth;
 			sourceTree = "<group>";
 		};
+		BCE43579250104460003C0C4 /* Ready */ = {
+			isa = PBXGroup;
+			children = (
+				BCE4357A2501046D0003C0C4 /* ReadyViewController.swift */,
+				BCE4357C250104760003C0C4 /* ReadyView.swift */,
+			);
+			path = Ready;
+			sourceTree = "<group>";
+		};
 		BCEE02B524F4DD18005E63CB = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +273,7 @@
 		BCEE02F224F4DD8D005E63CB /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				BCE43579250104460003C0C4 /* Ready */,
 				BCE435722500E9BE0003C0C4 /* ClientAuth */,
 				BCE4356825002D350003C0C4 /* SMSVerify */,
 				BCC1D8E824FC273B00B3E4A2 /* SMSAuth */,
@@ -540,10 +554,12 @@
 				BCE4356A25002D520003C0C4 /* SMSVerifyViewController.swift in Sources */,
 				BCE435782500F6830003C0C4 /* AiasError.swift in Sources */,
 				BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */,
+				BCE4357D250104760003C0C4 /* ReadyView.swift in Sources */,
 				BCE435742500E9DE0003C0C4 /* ClientAuthView.swift in Sources */,
 				BCC1D8F124FF95D800B3E4A2 /* Judgekeys.swift in Sources */,
 				BCE435762500F0210003C0C4 /* KeyChainManager.swift in Sources */,
 				BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */,
+				BCE4357B2501046D0003C0C4 /* ReadyViewController.swift in Sources */,
 				BC59466324FFB075008F58A9 /* RxImagePickerDelegateProxy.swift in Sources */,
 				BCE435712500E9A90003C0C4 /* ClientAuthViewController.swift in Sources */,
 				BC59466224FFB075008F58A9 /* UIImagePickerController+RxCreate.swift in Sources */,

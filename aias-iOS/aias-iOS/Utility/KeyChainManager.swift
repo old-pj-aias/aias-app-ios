@@ -23,7 +23,7 @@ final class KeyChainManager {
     }
     
     var token = ""
-    var isExistToken : Bool?{
+    var isExistToken : Bool{
         token != ""
     }
     
