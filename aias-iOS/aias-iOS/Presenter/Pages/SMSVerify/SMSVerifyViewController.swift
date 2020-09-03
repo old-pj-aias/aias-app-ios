@@ -29,18 +29,28 @@ final class SMSVerifyViewController: UIViewController{
         super.viewDidLoad()
         mainView.SubmitButton.rx.tap.asObservable().subscribe(onNext: {_ in
             AiasRequest.shared.request(body: "{\"code\":" + self.mainView.SMSTextField.text! + "}", path: .verify_code, method: .post)
-                .subscribe(onNext: {text in
-                    let id = text.convertToDictionary()?["id"] as? Int ?? 0
-                    let sm = SignatureManager()
-                    sm.setSubset(judgeKey: ApplicationConnectionManager.shared.judgeKey, text: ApplicationConnectionManager.shared.clientInfo.publicKey, id: id).subscribe(onNext: {
-                        sm.GenerateSignature().subscribe(onNext: { signature in
-                            let clientAppURL = ApplicationConnectionManager.shared.encodeScheme(signature: signature)
-                            if UIApplication.shared.canOpenURL(clientAppURL)
-                            {
-                                UIApplication.shared.open(clientAppURL, options: [:], completionHandler: nil)
-                            }
-                        }).disposed(by: self.disposeBag)
-                    }).disposed(by: self.disposeBag)
+                .subscribe(onNext: {tokenResponse in
+                    if let token = (tokenResponse.convertToDictionary()?["token"] as? String){
+                        do{
+                            try KeyChainManager().setToken(token: token)
+                        }catch{
+                            print("aa")
+                        }
+                    }else{
+                        //failed to get token
+                    }
+                    
+//                    let id = text.convertToDictionary()?["id"] as? Int ?? 0
+//                    let sm = SignatureManager()
+//                    sm.setSubset(judgeKey: ApplicationConnectionManager.shared.judgeKey, text: ApplicationConnectionManager.shared.clientInfo.publicKey, id: id).subscribe(onNext: {
+//                        sm.GenerateSignature().subscribe(onNext: { signature in
+//                            let clientAppURL = ApplicationConnectionManager.shared.encodeScheme(signature: signature)
+//                            if UIApplication.shared.canOpenURL(clientAppURL)
+//                            {
+//                                UIApplication.shared.open(clientAppURL, options: [:], completionHandler: nil)
+//                            }
+//                        }).disposed(by: self.disposeBag)
+//                    }).disposed(by: self.disposeBag)
                 }).disposed(by: self.disposeBag)
         }).disposed(by: disposeBag)
         
