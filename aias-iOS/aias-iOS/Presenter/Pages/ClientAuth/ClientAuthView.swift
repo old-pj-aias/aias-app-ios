@@ -1,8 +1,8 @@
 //
-//  SMSAuthView.swift
+//  ClientAuthView.swift
 //  aias-iOS
 //
-//  Created by shunta nakajima on 2020/08/31.
+//  Created by shunta nakajima on 2020/09/03.
 //  Copyright © 2020 ShuntaNakajima. All rights reserved.
 //
 
@@ -12,10 +12,9 @@ import RxSwift
 import RxCocoa
 import PinLayout
 
-final class SMSAuthView: UIView,UITextFieldDelegate{
+final class ClientAuthView: UIView,UITextFieldDelegate{
     
-    let TitleLabel = UILabel()
-    let SMSTextField = UITextField()
+    let SelectEJkeyTextField = UITextField()
     let SubmitButton = UIButton()
     
     public enum Reusable{
@@ -27,19 +26,18 @@ final class SMSAuthView: UIView,UITextFieldDelegate{
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        addSubview(SMSTextField)
+        addSubview(SelectEJkeyTextField)
         addSubview(SubmitButton)
         
         backgroundColor = .white
         
-        SMSTextField.backgroundColor = .white
-        SMSTextField.attributedPlaceholder = NSAttributedString(string: "Your Phone", attributes: [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)])
-        SMSTextField.textAlignment = .center
-        SMSTextField.keyboardType = .numberPad
-        SMSTextField.layer.borderWidth = 1
+        SelectEJkeyTextField.layer.borderWidth = 1
+        SelectEJkeyTextField.attributedPlaceholder = NSAttributedString(string: "EJ Key", attributes: [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)])
+        SelectEJkeyTextField.textAlignment = .center
+        SelectEJkeyTextField.tintColor = .clear
         
         SubmitButton.backgroundColor = #colorLiteral(red: 1, green: 0.3675946896, blue: 0.5942392387, alpha: 1)
-        SubmitButton.setTitle("Get Verification", for: .normal)
+        SubmitButton.setTitle("Select EJ Key", for: .normal)
         
         
         layout()
@@ -50,8 +48,8 @@ final class SMSAuthView: UIView,UITextFieldDelegate{
     }
     
     func layout(){
-        SMSTextField.pin.left(35).right(35).height(60).vCenter(-120)
-        SMSTextField.layer.cornerRadius = SMSTextField.bounds.height/2
+        SelectEJkeyTextField.pin.left(35).right(35).height(60).vCenter(-120)
+        SelectEJkeyTextField.layer.cornerRadius = SelectEJkeyTextField.bounds.height/2
         SubmitButton.pin.left(35).right(35).height(60).vCenter(-50)
         SubmitButton.layer.cornerRadius = SubmitButton.bounds.height/2
     }
