@@ -37,7 +37,7 @@ final class ClientAuthView: UIView,UITextFieldDelegate{
         SelectEJkeyTextField.tintColor = .clear
         
         SubmitButton.backgroundColor = #colorLiteral(red: 1, green: 0.3675946896, blue: 0.5942392387, alpha: 1)
-        SubmitButton.setTitle("Verify", for: .normal)
+        SubmitButton.setTitle("Select EJ Key", for: .normal)
         
         
         layout()

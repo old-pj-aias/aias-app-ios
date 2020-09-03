@@ -38,4 +38,5 @@ enum AiasRequestPath:String{
     case sign = "sign"
     case send_sms = "send_sms"
     case verify_code = "verify_code"
+    case auth = "auth"
 }

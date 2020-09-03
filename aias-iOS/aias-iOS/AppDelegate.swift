@@ -28,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         ApplicationConnectionManager.shared.loadScheme(url: url)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = ClientAuthViewController()
+        window?.makeKeyAndVisible()
         return true
     }
 

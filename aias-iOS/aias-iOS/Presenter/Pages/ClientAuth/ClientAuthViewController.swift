@@ -68,6 +68,31 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
             }
         }).disposed(by: disposeBag)
         
+        mainView.SubmitButton.rx.tap.asObservable().subscribe(onNext: {_ in
+            AiasRequest.shared.request(body: "{\"token\":\"" + KeyChainManager.shared.token + "\"}", path: .auth, method: .post)
+            .subscribe(onNext: {idResponse in
+                if let id = (idResponse.convertToDictionary()?["id"] as? Int){
+                    let sm = SignatureManager()
+                    sm.setSubset(judgeKey: ApplicationConnectionManager.shared.judgeKey, text: ApplicationConnectionManager.shared.clientInfo.publicKey, id: id).subscribe(onNext: {
+                        sm.GenerateSignature().subscribe(onNext: { signature in
+                            let clientAppURL = ApplicationConnectionManager.shared.encodeScheme(signature: signature)
+                            if UIApplication.shared.canOpenURL(clientAppURL)
+                            {
+                                UIApplication.shared.open(clientAppURL, options: [:], completionHandler: { _ in
+                                    let appDelegate  = UIApplication.shared.delegate
+                                    appDelegate?.window!?.rootViewController = ReadyViewController()
+                                })
+                            }
+                        }).disposed(by: self.disposeBag)
+                    }).disposed(by: self.disposeBag)
+                }else{
+                    //failed to get token
+                }
+            }).disposed(by: self.disposeBag)
+            
+        }).disposed(by: disposeBag)
+        
+        
     }
     
     @objc private func donePicker() {
