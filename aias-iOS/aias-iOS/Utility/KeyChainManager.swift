@@ -29,10 +29,14 @@ final class KeyChainManager {
     
     private let keychain = Keychain(service: "com.aias.aias-token")
     
+    func updateTokenStatus(){
+        
+    }
     
     func setToken(token:String) throws{
         do {
             try keychain.set(token, key: "aiasKeyToken")
+            self.token = token
         }catch {
             throw AiasError.failedToSaveAiasToken
         }
@@ -41,6 +45,7 @@ final class KeyChainManager {
     func deleteToken() throws{
         do {
             try keychain.remove("aiasKeyToken")
+            self.token = ""
         }catch {
             throw AiasError.failedToDeleteAiasToken
         }

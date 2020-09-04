@@ -25,6 +25,29 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
         self.view = ClientAuthView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !KeyChainManager.shared.isExistToken{
+            let vc = SMSAuthViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }else{
+            let alert: UIAlertController = UIAlertController(title: "trust" + ApplicationConnectionManager.shared.clientInfo.appScheme + "?", message:  "Do you trust" + ApplicationConnectionManager.shared.clientInfo.appScheme, preferredStyle:  UIAlertController.Style.alert)
+            let confirmAction: UIAlertAction = UIAlertAction(title: "YES", style: UIAlertAction.Style.default, handler:nil)
+            let cancelAction: UIAlertAction = UIAlertAction(title: "NO", style: UIAlertAction.Style.cancel, handler:{
+                (action: UIAlertAction!) -> Void in
+                let clientAppURL = ApplicationConnectionManager.shared.encodeScheme(signature: "")
+                UIApplication.shared.open(clientAppURL, options: [:], completionHandler: { _ in
+                    let appDelegate  = UIApplication.shared.delegate
+                    appDelegate?.window!?.rootViewController = ReadyViewController()
+                })
+            })
+            alert.addAction(cancelAction)
+            alert.addAction(confirmAction)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let toolBar = UIToolbar()
@@ -84,7 +107,7 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
                         }).disposed(by: self.disposeBag)
                     }).disposed(by: self.disposeBag)
                 }else{
-                    //failed to get token
+                    self.popAlert(title: "error", text: "failed to get ID")
                 }
             }).disposed(by: self.disposeBag)
             
@@ -95,7 +118,6 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
     
     @objc private func donePicker() {
         mainView.SelectEJkeyTextField.resignFirstResponder()
-        //if EJkey from QR is selected, call photo library
         if self.mainView.SelectEJkeyTextField.text == "Read EJ key from QR"{
             pickImage()
         }
