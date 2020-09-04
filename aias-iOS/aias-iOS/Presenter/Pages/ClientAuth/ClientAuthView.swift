@@ -16,6 +16,7 @@ final class ClientAuthView: UIView,UITextFieldDelegate{
     
     let SelectEJkeyTextField = UITextField()
     let SubmitButton = UIButton()
+    let explainLabel = UILabel()
     
     public enum Reusable{
     }
@@ -26,10 +27,15 @@ final class ClientAuthView: UIView,UITextFieldDelegate{
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        addSubview(explainLabel)
         addSubview(SelectEJkeyTextField)
         addSubview(SubmitButton)
         
         backgroundColor = .white
+        
+        explainLabel.text = "Please select judges. \nYou will be tracked when the judges are unanimous."
+        explainLabel.font = UIFont.systemFont(ofSize: 13)
+        explainLabel.numberOfLines = 3
         
         SelectEJkeyTextField.layer.borderWidth = 1
         SelectEJkeyTextField.attributedPlaceholder = NSAttributedString(string: "EJ Key", attributes: [NSAttributedString.Key.foregroundColor : #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)])
@@ -50,6 +56,7 @@ final class ClientAuthView: UIView,UITextFieldDelegate{
     func layout(){
         SelectEJkeyTextField.pin.left(35).right(35).height(60).vCenter(-120)
         SelectEJkeyTextField.layer.cornerRadius = SelectEJkeyTextField.bounds.height/2
+        explainLabel.pin.left(35).right(35).height(55).bottom(to: SelectEJkeyTextField.edge.top).marginBottom(10)
         SubmitButton.pin.left(35).right(35).height(60).vCenter(-50)
         SubmitButton.layer.cornerRadius = SubmitButton.bounds.height/2
     }
