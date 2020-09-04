@@ -32,7 +32,7 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
         }else{
-            let alert: UIAlertController = UIAlertController(title: "trust" + ApplicationConnectionManager.shared.clientInfo.appScheme + "?", message:  "Do you trust" + ApplicationConnectionManager.shared.clientInfo.appScheme, preferredStyle:  UIAlertController.Style.alert)
+            let alert: UIAlertController = UIAlertController(title: "trust " + ApplicationConnectionManager.shared.clientInfo.appScheme + "?", message:  "Do you trust " + ApplicationConnectionManager.shared.clientInfo.appScheme + "?", preferredStyle:  UIAlertController.Style.alert)
             let confirmAction: UIAlertAction = UIAlertAction(title: "YES", style: UIAlertAction.Style.default, handler:nil)
             let cancelAction: UIAlertAction = UIAlertAction(title: "NO", style: UIAlertAction.Style.cancel, handler:{
                 (action: UIAlertAction!) -> Void in
