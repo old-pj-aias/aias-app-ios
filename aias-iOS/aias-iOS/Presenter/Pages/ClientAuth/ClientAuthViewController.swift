@@ -93,6 +93,10 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
         
         mainView.SubmitButton.rx.tap.asObservable().subscribe(onNext: {_ in
             print("{\"token\":\"" + KeyChainManager.shared.token + "\"}")
+            if ApplicationConnectionManager.shared.judgeKey == ""{
+                self.popAlert(title: "error", text: "Please select EJ key")
+                return
+            }
             AiasRequest.shared.request(body: "{\"token\":\"" + KeyChainManager.shared.token + "\"}", path: .auth, method: .post)
             .subscribe(onNext: {idResponse in
                 if let id = (idResponse.convertToDictionary()?["id"] as? Int){
