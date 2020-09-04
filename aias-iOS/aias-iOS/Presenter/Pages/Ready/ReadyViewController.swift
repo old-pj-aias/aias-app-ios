@@ -23,7 +23,6 @@ final class ReadyViewController: UIViewController {
                 let appDelegate  = UIApplication.shared.delegate
                 appDelegate?.window!?.rootViewController = SMSAuthViewController()
             }catch{
-                print("aa")
             }
         }).disposed(by: disposeBag)
     }

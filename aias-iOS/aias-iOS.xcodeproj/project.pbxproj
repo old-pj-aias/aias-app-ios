@@ -13,6 +13,7 @@
 		BC59466124FFB075008F58A9 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */; };
 		BC59466224FFB075008F58A9 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */; };
 		BC59466324FFB075008F58A9 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */; };
+		BC7741452502A4BA001168C9 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7741442502A4BA001168C9 /* UIViewController+Alert.swift */; };
 		BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8E924FC27BA00B3E4A2 /* SMSAuthView.swift */; };
 		BCC1D8EC24FE14B500B3E4A2 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8EB24FE14B500B3E4A2 /* Requests.swift */; };
 		BCC1D8EF24FE1D7800B3E4A2 /* SignatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */; };
@@ -68,6 +69,7 @@
 		BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		BC7741442502A4BA001168C9 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		BCC1D8E924FC27BA00B3E4A2 /* SMSAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAuthView.swift; sourceTree = "<group>"; };
 		BCC1D8EB24FE14B500B3E4A2 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		BCC1D8EE24FE1D7800B3E4A2 /* SignatureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureManager.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */,
 				BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */,
 				BCE4356D250035C70003C0C4 /* String+ConvertToDict.swift */,
+				BC7741442502A4BA001168C9 /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 				BCE4356A25002D520003C0C4 /* SMSVerifyViewController.swift in Sources */,
 				BCE435782500F6830003C0C4 /* AiasError.swift in Sources */,
 				BCEE02C224F4DD18005E63CB /* AppDelegate.swift in Sources */,
+				BC7741452502A4BA001168C9 /* UIViewController+Alert.swift in Sources */,
 				BCE4357D250104760003C0C4 /* ReadyView.swift in Sources */,
 				BCE435742500E9DE0003C0C4 /* ClientAuthView.swift in Sources */,
 				BCC1D8F124FF95D800B3E4A2 /* Judgekeys.swift in Sources */,

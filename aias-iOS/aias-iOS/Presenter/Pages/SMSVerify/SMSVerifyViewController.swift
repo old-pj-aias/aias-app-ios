@@ -40,10 +40,12 @@ final class SMSVerifyViewController: UIViewController{
                                 self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
                             }
                         }catch{
-                            print("aa")
+                            self.popAlert(title: "error", text: "an internal error")
                         }
+                    }else if tokenResponse == "invalid code"{
+                        self.popAlert(title: "error", text: "invalid code")
                     }else{
-                        //failed to get token
+                        self.popAlert(title: "error", text: "server error")
                     }
                 }).disposed(by: self.disposeBag)
         }).disposed(by: disposeBag)
