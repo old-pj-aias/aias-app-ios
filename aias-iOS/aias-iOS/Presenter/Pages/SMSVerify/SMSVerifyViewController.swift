@@ -32,9 +32,13 @@ final class SMSVerifyViewController: UIViewController{
                 .subscribe(onNext: {tokenResponse in
                     if let token = (tokenResponse.convertToDictionary()?["token"] as? String){
                         do{
-                            try KeyChainManager().setToken(token: token)
-                            let appDelegate  = UIApplication.shared.delegate
-                            appDelegate?.window!?.rootViewController = ReadyViewController()
+                            try KeyChainManager.shared.setToken(token: token)
+                            if ApplicationConnectionManager.shared.clientInfo.appScheme == ""{
+                                let appDelegate  = UIApplication.shared.delegate
+                                appDelegate?.window!?.rootViewController = ReadyViewController()
+                            }else{
+                                self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+                            }
                         }catch{
                             print("aa")
                         }

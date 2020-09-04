@@ -25,6 +25,15 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
         self.view = ClientAuthView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !KeyChainManager.shared.isExistToken{
+            let vc = SMSAuthViewController()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let toolBar = UIToolbar()

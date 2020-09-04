@@ -19,7 +19,7 @@ final class ReadyViewController: UIViewController {
         super.viewDidLoad()
         mainView.LogoutButton.rx.tap.asObservable().subscribe(onNext: {_ in
             do{
-                try KeyChainManager().deleteToken()
+                try KeyChainManager.shared.deleteToken()
                 let appDelegate  = UIApplication.shared.delegate
                 appDelegate?.window!?.rootViewController = SMSAuthViewController()
             }catch{
