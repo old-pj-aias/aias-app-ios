@@ -1,0 +1,279 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  position: relative;
+}
+
+#contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.layer {
+  height: 0;
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #4b4b4b;
+}
+
+.bottom-title {
+  position: absolute;
+  top: 440px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #4b4b4b;
+}
+
+.image-box {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+}
+
+.layer1-1 {
+  left: 30px;
+  top: 220px;
+}
+
+.layer1-2 {
+  left: 190px;
+  top: 230px;
+  height: 100px;
+  width: 100px;
+  transform: scale(-1, 1);
+  overflow: hidden;
+}
+
+.layer1-3 {
+  left: 340px;
+  top: 220px;
+}
+
+.layer1-4 {
+  left: 180px;
+  top: 220px;
+  height: 120px;
+  width: 120px;
+  transform: rotate(-45deg);
+}
+
+.cross-1 {
+  position: absolute;
+  top: 50%;
+  width: 0%;
+  height: 20px;
+  background-color: #ff7477;
+  transform: translateY(-50%);
+  animation: cross1 1.1s ease 1s forwards;
+}
+
+.cross-2 {
+  position: absolute;
+  left: 50%;
+  height: 0%;
+  width: 20px;
+  background-color: #ff7477;
+  transform: translateX(-50%);
+  animation: cross2 1.1s ease 1s forwards;
+}
+
+.layer2-1 {
+  left: 190px;
+  top: 230px;
+  height: 25px;
+  width: 100px;
+}
+
+.layer2-2 {
+  left: 190px;
+  top: 230px;
+  height: 25px;
+  width: 100px;
+  transform: scale(-1, 1);
+}
+
+.image-box-team {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+}
+
+.layer3-1 {
+  left: 50px;
+  top: 170px;
+}
+
+.layer3-2 {
+  left: 50px;
+  top: 250px;
+}
+
+.layer3-3 {
+  left: 50px;
+  top: 330px;
+}
+
+.layer-1 {
+  animation: fade-out 0.8s ease 4.6s forwards;
+}
+
+.layer-2 {
+  animation: fade-in 0.8s ease 5.4s forwards, fade-out 0.8s ease 11.2s forwards;
+  opacity: 0;
+}
+
+.layer-3 {
+  animation: fade-in 0.8s ease 12s forwards, fade-out 0.8s ease 17.8s forwards;
+  opacity: 0;
+}
+
+.layer-4 {
+  animation: fade-in 0.8s ease 18.6s forwards, fade-out 0.8s ease 24.4s forwards;
+  opacity: 0;
+}
+
+.circle {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.c1 {
+  opacity: 0;
+  animation: fade-in 0.4s ease 12.8s forwards;
+}
+
+.c2 {
+  opacity: 0;
+  animation: fade-in 0.4s ease 13.2s forwards;
+}
+
+.c3 {
+  opacity: 0;
+  animation: fade-in 0.4s ease 13.6s forwards;
+}
+
+.arrowimage-layer1 {
+  animation: left-right 0.4s ease 6.2s forwards;
+  transform: translateX(120%);
+}
+
+.arrowimage {
+  animation: left-right 0.4s ease 14s forwards;
+  transform: translateX(120%);
+}
+
+.s1 {
+  opacity: 0;
+  animation: fade-in 0.4s ease 19.4s forwards;
+}
+
+.s2 {
+  opacity: 0;
+  animation: fade-in 0.4s ease 19.8s forwards;
+}
+
+.s3 {
+  opacity: 0;
+  animation: fade-in 0.4s ease 20.2s forwards;
+}
+
+.arrowimage2 {
+  animation: left-right 0.4s ease 20.6s forwards;
+  transform: translateX(120%);
+}
+
+.cross-3 {
+  position: absolute;
+  top: 50%;
+  width: 0%;
+  height: 20px;
+  background-color: #ff7477;
+  transform: translateY(-50%);
+  animation: cross1 1.1s ease 21s forwards;
+}
+
+.cross-4 {
+  position: absolute;
+  left: 50%;
+  height: 0%;
+  width: 20px;
+  background-color: #ff7477;
+  transform: translateX(-50%);
+  animation: cross2 1.1s ease 21s forwards;
+}
+
+.layer3-4 {
+  position: relative;
+  left: 190px;
+  top: 230px;
+  height: 100px;
+  width: 100px;
+  transform: scale(-1, 1);
+  overflow: hidden;
+}
+
+@keyframes cross1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes cross2 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes left-right {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=/aias-tutorial-css.e31bb0bc.css.map */

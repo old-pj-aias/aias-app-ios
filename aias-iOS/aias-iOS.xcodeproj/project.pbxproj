@@ -10,6 +10,17 @@
 		3395001AAE2E3800CC66DD9A /* Pods_aias_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADB3F4D57D6E38413C85C11 /* Pods_aias_iOSTests.framework */; };
 		4217D33B1C2404D36FF8E947 /* Pods_aias_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157AAB2394F9A270661BED07 /* Pods_aias_iOS.framework */; };
 		A7FAB4F67720C3C61C53638A /* Pods_aias_iOS_aias_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044CD5394E15F51930384840 /* Pods_aias_iOS_aias_iOSUITests.framework */; };
+		BC524E3F251CC402008637C5 /* unei.1432d1a5.svg in Resources */ = {isa = PBXBuildFile; fileRef = BC524E34251CC402008637C5 /* unei.1432d1a5.svg */; };
+		BC524E40251CC402008637C5 /* circle.2eb9b3ec.svg in Resources */ = {isa = PBXBuildFile; fileRef = BC524E35251CC402008637C5 /* circle.2eb9b3ec.svg */; };
+		BC524E41251CC402008637C5 /* privacy.c353882d.svg in Resources */ = {isa = PBXBuildFile; fileRef = BC524E36251CC402008637C5 /* privacy.c353882d.svg */; };
+		BC524E42251CC402008637C5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = BC524E37251CC402008637C5 /* index.html */; };
+		BC524E43251CC402008637C5 /* team.550e4fc6.svg in Resources */ = {isa = PBXBuildFile; fileRef = BC524E38251CC402008637C5 /* team.550e4fc6.svg */; };
+		BC524E44251CC402008637C5 /* aias-tutorial-css.e31bb0bc.css in Resources */ = {isa = PBXBuildFile; fileRef = BC524E39251CC402008637C5 /* aias-tutorial-css.e31bb0bc.css */; };
+		BC524E45251CC402008637C5 /* arrow.305c14c2.svg in Resources */ = {isa = PBXBuildFile; fileRef = BC524E3B251CC402008637C5 /* arrow.305c14c2.svg */; };
+		BC524E46251CC402008637C5 /* aias-tutorial-css.e31bb0bc.js in Resources */ = {isa = PBXBuildFile; fileRef = BC524E3D251CC402008637C5 /* aias-tutorial-css.e31bb0bc.js */; };
+		BC524E47251CC402008637C5 /* cross.b107c138.svg in Resources */ = {isa = PBXBuildFile; fileRef = BC524E3E251CC402008637C5 /* cross.b107c138.svg */; };
+		BC524E4A251CC449008637C5 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC524E49251CC449008637C5 /* TutorialViewController.swift */; };
+		BC524E4C251CC454008637C5 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC524E4B251CC454008637C5 /* TutorialView.swift */; };
 		BC59466124FFB075008F58A9 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */; };
 		BC59466224FFB075008F58A9 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */; };
 		BC59466324FFB075008F58A9 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */; };
@@ -66,6 +77,19 @@
 		774813A7BABFBEC21C4A52CC /* Pods-aias-iOS-aias-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS-aias-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A25BE04E3E2A264928FC788E /* Pods-aias-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS.release.xcconfig"; path = "Target Support Files/Pods-aias-iOS/Pods-aias-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AFDEEC38CEDBB41138438C49 /* Pods-aias-iOS-aias-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-aias-iOS-aias-iOSUITests/Pods-aias-iOS-aias-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC524E34251CC402008637C5 /* unei.1432d1a5.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unei.1432d1a5.svg; sourceTree = "<group>"; };
+		BC524E35251CC402008637C5 /* circle.2eb9b3ec.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = circle.2eb9b3ec.svg; sourceTree = "<group>"; };
+		BC524E36251CC402008637C5 /* privacy.c353882d.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy.c353882d.svg; sourceTree = "<group>"; };
+		BC524E37251CC402008637C5 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		BC524E38251CC402008637C5 /* team.550e4fc6.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = team.550e4fc6.svg; sourceTree = "<group>"; };
+		BC524E39251CC402008637C5 /* aias-tutorial-css.e31bb0bc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "aias-tutorial-css.e31bb0bc.css"; sourceTree = "<group>"; };
+		BC524E3A251CC402008637C5 /* aias-tutorial-css.e31bb0bc.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "aias-tutorial-css.e31bb0bc.js.map"; sourceTree = "<group>"; };
+		BC524E3B251CC402008637C5 /* arrow.305c14c2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arrow.305c14c2.svg; sourceTree = "<group>"; };
+		BC524E3C251CC402008637C5 /* aias-tutorial-css.e31bb0bc.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "aias-tutorial-css.e31bb0bc.css.map"; sourceTree = "<group>"; };
+		BC524E3D251CC402008637C5 /* aias-tutorial-css.e31bb0bc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "aias-tutorial-css.e31bb0bc.js"; sourceTree = "<group>"; };
+		BC524E3E251CC402008637C5 /* cross.b107c138.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cross.b107c138.svg; sourceTree = "<group>"; };
+		BC524E49251CC449008637C5 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		BC524E4B251CC454008637C5 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		BC59465E24FFB075008F58A9 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		BC59465F24FFB075008F58A9 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		BC59466024FFB075008F58A9 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
@@ -145,6 +169,33 @@
 				24F7DE66F3AC5505CF992107 /* Pods-aias-iOSTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC524E33251CC402008637C5 /* tutorial_html */ = {
+			isa = PBXGroup;
+			children = (
+				BC524E34251CC402008637C5 /* unei.1432d1a5.svg */,
+				BC524E35251CC402008637C5 /* circle.2eb9b3ec.svg */,
+				BC524E36251CC402008637C5 /* privacy.c353882d.svg */,
+				BC524E37251CC402008637C5 /* index.html */,
+				BC524E38251CC402008637C5 /* team.550e4fc6.svg */,
+				BC524E39251CC402008637C5 /* aias-tutorial-css.e31bb0bc.css */,
+				BC524E3A251CC402008637C5 /* aias-tutorial-css.e31bb0bc.js.map */,
+				BC524E3B251CC402008637C5 /* arrow.305c14c2.svg */,
+				BC524E3C251CC402008637C5 /* aias-tutorial-css.e31bb0bc.css.map */,
+				BC524E3D251CC402008637C5 /* aias-tutorial-css.e31bb0bc.js */,
+				BC524E3E251CC402008637C5 /* cross.b107c138.svg */,
+			);
+			path = tutorial_html;
+			sourceTree = "<group>";
+		};
+		BC524E48251CC416008637C5 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				BC524E49251CC449008637C5 /* TutorialViewController.swift */,
+				BC524E4B251CC454008637C5 /* TutorialView.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 		BC59465D24FFB02C008F58A9 /* Extensions */ = {
@@ -276,6 +327,7 @@
 		BCEE02F224F4DD8D005E63CB /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				BC524E48251CC416008637C5 /* Tutorial */,
 				BCE43579250104460003C0C4 /* Ready */,
 				BCE435722500E9BE0003C0C4 /* ClientAuth */,
 				BCE4356825002D350003C0C4 /* SMSVerify */,
@@ -296,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				BCEE02CA24F4DD1A005E63CB /* Assets.xcassets */,
+				BC524E33251CC402008637C5 /* tutorial_html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -422,8 +475,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC524E45251CC402008637C5 /* arrow.305c14c2.svg in Resources */,
+				BC524E43251CC402008637C5 /* team.550e4fc6.svg in Resources */,
+				BC524E41251CC402008637C5 /* privacy.c353882d.svg in Resources */,
+				BC524E47251CC402008637C5 /* cross.b107c138.svg in Resources */,
+				BC524E44251CC402008637C5 /* aias-tutorial-css.e31bb0bc.css in Resources */,
+				BC524E40251CC402008637C5 /* circle.2eb9b3ec.svg in Resources */,
 				BCEE02CE24F4DD1A005E63CB /* LaunchScreen.storyboard in Resources */,
+				BC524E42251CC402008637C5 /* index.html in Resources */,
+				BC524E46251CC402008637C5 /* aias-tutorial-css.e31bb0bc.js in Resources */,
 				BCEE02CB24F4DD1A005E63CB /* Assets.xcassets in Resources */,
+				BC524E3F251CC402008637C5 /* unei.1432d1a5.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +622,7 @@
 				BC7741452502A4BA001168C9 /* UIViewController+Alert.swift in Sources */,
 				BCE4357D250104760003C0C4 /* ReadyView.swift in Sources */,
 				BCE435742500E9DE0003C0C4 /* ClientAuthView.swift in Sources */,
+				BC524E4C251CC454008637C5 /* TutorialView.swift in Sources */,
 				BCC1D8F124FF95D800B3E4A2 /* Judgekeys.swift in Sources */,
 				BCE435762500F0210003C0C4 /* KeyChainManager.swift in Sources */,
 				BCC1D8EA24FC27BA00B3E4A2 /* SMSAuthView.swift in Sources */,
@@ -571,6 +634,7 @@
 				BC59466124FFB075008F58A9 /* UIImagePickerController+Rx.swift in Sources */,
 				BCE4356C25002D5B0003C0C4 /* SMSVerifyView.swift in Sources */,
 				BCC1D8F324FFA65300B3E4A2 /* QRKeyManager.swift in Sources */,
+				BC524E4A251CC449008637C5 /* TutorialViewController.swift in Sources */,
 				BCE4356724FFE78C0003C0C4 /* ApplicationConnectionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

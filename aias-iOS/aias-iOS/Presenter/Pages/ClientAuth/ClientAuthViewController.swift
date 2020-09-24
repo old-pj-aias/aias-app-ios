@@ -92,7 +92,6 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
         }).disposed(by: disposeBag)
         
         mainView.SubmitButton.rx.tap.asObservable().subscribe(onNext: {_ in
-            print("{\"token\":\"" + KeyChainManager.shared.token + "\"}")
             if ApplicationConnectionManager.shared.judgeKey == ""{
                 self.popAlert(title: "error", text: "Please select EJ key")
                 return
@@ -103,8 +102,11 @@ class ClientAuthViewController: UIViewController, UIImagePickerControllerDelegat
                     let sm = SignatureManager()
                     sm.setSubset(judgeKey: ApplicationConnectionManager.shared.judgeKey, text: ApplicationConnectionManager.shared.clientInfo.publicKey, id: id).subscribe(onNext: {
                         sm.GenerateSignature().subscribe(onNext: { signature in
+                            print(signature)
+                            print("ID: " + String(id))
                             let clientAppURL = ApplicationConnectionManager.shared.encodeScheme(signature: signature)
                             UIApplication.shared.open(clientAppURL, options: [:], completionHandler: { _ in
+                                ApplicationConnectionManager.shared.clientInfo.appScheme = ""
                                 let appDelegate  = UIApplication.shared.delegate
                                 appDelegate?.window!?.rootViewController = ReadyViewController()
                             })

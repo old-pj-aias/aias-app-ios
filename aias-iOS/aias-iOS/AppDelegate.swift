@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if KeyChainManager.shared.isExistToken{
             window?.rootViewController = ReadyViewController()
         }else{
-            window?.rootViewController = SMSAuthViewController()
+            window?.rootViewController = TutorialViewController()
         }
         window?.makeKeyAndVisible()
         return true
